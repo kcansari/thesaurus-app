@@ -5,6 +5,8 @@ import { CssBaseline } from '@mui/material';
 import theme from './Components/theme';
 import {BrowserRouter,Routes, Route} from "react-router-dom";
 import Home from './Pages/Home';
+import Bookmarks from './Pages/Bookmarks';
+import Definition from './Pages/Definition';
 
 
 
@@ -15,7 +17,9 @@ function App() {
        <CssBaseline/>
           <BrowserRouter>
             <Routes>
-              <Route path='/' element=<Home /> />
+              <Route path='/'  element=<Home /> />
+              <Route path='/definition/:word' element=<Definition /> />
+              <Route path='bookmarks' element=<Bookmarks /> />
             </Routes>
           </BrowserRouter>
     </ThemeProvider>
