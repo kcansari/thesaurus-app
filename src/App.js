@@ -1,29 +1,24 @@
 import './App.css';
-import React from 'react';
-import Fab from '@mui/material/Fab';
-import SearchIcon from '@mui/icons-material/Search';
-import TextField from '@mui/material/TextField';
+import * as React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
+import theme from './Components/theme';
+import {BrowserRouter,Routes, Route} from "react-router-dom";
+import Home from './Pages/Home';
 
 
 
 
 function App() {
   return (
-      <div className="App">
-      <header className="App-header">
-        <TextField 
-        id="outlined-basic"
-        color='warning'
-        margin='normal'
-        label="Search Thesaurus" 
-        variant="outlined" />
-
-          <Fab 
-            aria-label="SearchIcon">
-            <SearchIcon />
-          </Fab>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+       <CssBaseline/>
+          <BrowserRouter>
+            <Routes>
+              <Route path='/' element=<Home /> />
+            </Routes>
+          </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
