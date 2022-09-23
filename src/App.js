@@ -1,22 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Fab from '@mui/material/Fab';
+import SearchIcon from '@mui/icons-material/Search';
+import TextField from '@mui/material/TextField';
+
+
+
 
 function App() {
   return (
-    <div className="App">
+      <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <TextField 
+        id="outlined-basic"
+        color='warning'
+        margin='normal'
+        label="Search Thesaurus" 
+        variant="outlined" />
+
+          <Fab 
+            aria-label="SearchIcon">
+            <SearchIcon />
+          </Fab>
       </header>
     </div>
   );
