@@ -5,7 +5,13 @@ const theme = createTheme({
       background: {
           default: "#FECD70"
       }
-    }
+    },
+    typography:{
+      fontFamily: "Mulish, sans-serif",
+      h4:{
+        fontWeight:800
+      },
+    },
   });
 
 export default theme
