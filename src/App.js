@@ -5,8 +5,8 @@ import { CssBaseline } from '@mui/material';
 import theme from './Components/theme';
 import {BrowserRouter,Routes, Route} from "react-router-dom";
 import Home from './Pages/Home';
-import Bookmarks from './Pages/Bookmarks';
 import Definition from './Pages/Definition';
+import Grid from '@mui/material/Grid';
 
 
 
@@ -15,13 +15,16 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
        <CssBaseline/>
-          <BrowserRouter>
+       <Grid container>
+       <Grid item xs={12} sx={{p:2}}>
+       <BrowserRouter>
             <Routes>
               <Route path='/'  element=<Home /> />
               <Route path='/definition/:word' element=<Definition /> />
-              <Route path='bookmarks' element=<Bookmarks /> />
             </Routes>
           </BrowserRouter>
+          </Grid>
+       </Grid>
     </ThemeProvider>
   );
 }
