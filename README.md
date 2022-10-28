@@ -1,24 +1,20 @@
-
 # Thesaurus App
 
-This application provide to find users synonym words relative which they type.
+![ScreenShoot](https://raw.githubusercontent.com/kcansari/thesaurus-app/master/uploads/Home.png)
+![ScreenShoot](https://raw.githubusercontent.com/kcansari/thesaurus-app/master/uploads/Synon.png)
 
-## Motivation
+---
 
-Essantial approach in order to improve the React and MUI skills.
+## Technology Summary
 
+**Client:** React, MUI
 
+**Server:** -
 
-## Tech/Framework used
+**Database** -
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Feature
 
-**Client:** MUI
-
-
-  
-## Badge
+- _The Thesaurus App allows you to look up synonyms (similar words) for any English word._
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-  
